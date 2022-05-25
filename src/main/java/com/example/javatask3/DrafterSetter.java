@@ -9,7 +9,7 @@ public class DrafterSetter {
     public Hero hero;
 
     @Autowired
-    public void setHero(@Qualifier("carryHero") Hero hero)
+    public void setHero(@Qualifier("supportHero") Hero hero)
     {
         this.hero=hero;
     }

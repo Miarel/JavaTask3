@@ -8,16 +8,17 @@ import java.util.logging.Logger;
 
 @Component
 public class SupportHero implements Hero {
-    private static final Logger log = Logger.getLogger(CarryHero.class.getName());
+
+    org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(SupportHero.class.getName());
 
     @PostConstruct
     public void init() {
-        log.info("Bean for support initiated");
+        logger.info("Bean for support initiated");
     }
 
     @PreDestroy
     public void destroy() {
-        log.info("Bean for support destructured");
+        logger.info("Bean for support destructured");
     }
 
     @Override

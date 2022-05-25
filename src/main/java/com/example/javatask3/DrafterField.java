@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class DrafterField {
-    @Qualifier("supportHero")
+    @Qualifier("carryHero")
     @Autowired
     private Hero hero;
 

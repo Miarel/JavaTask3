@@ -6,19 +6,19 @@ import javax.annotation.PreDestroy;
 
 import java.util.logging.Logger;
 
-@Component
+@Component(value = "carryHero")
 public class CarryHero implements Hero {
 
-    private static final Logger log = Logger.getLogger(CarryHero.class.getName());
+    org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(CarryHero.class.getName());
 
     @PostConstruct
     public void init() {
-        log.info("Bean for carry initiated");
+        logger.info("Bean for carry initiated");
     }
 
     @PreDestroy
     public void destroy() {
-        log.info("Bean for carry destructured");
+        logger.info("Bean for carry destructured");
     }
 
     @Override

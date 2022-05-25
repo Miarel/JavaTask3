@@ -18,6 +18,9 @@ public class JavaTask3Application {
 
     public static void main(String[] args) {
         SpringApplication.run(JavaTask3Application.class, args);
+        System.out.println(constructorInjection.pickHero());
+        System.out.println(fieldInjection.pickHero());
+        System.out.println(setterInjection.pickHero());
     }
 
 }

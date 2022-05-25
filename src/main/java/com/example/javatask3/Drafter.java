@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public class Drafter {
     private Hero hero;
 
-    public Drafter(@Qualifier("carryHero") Hero hero) {
+    public Drafter(@Qualifier("supportHero") Hero hero) {
         this.hero=hero;
     }
 
